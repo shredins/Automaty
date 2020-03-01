@@ -23,4 +23,8 @@ class AutomatyTests: XCTestCase {
         XCTAssertTrue(1 == 1)
     }
 
+    func testOtherCondition() {
+        XCTAssertTrue(2 == 2)
+    }
+
 }
