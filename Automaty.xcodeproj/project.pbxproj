@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F12D433E24086AAE0020222C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D433D24086AAE0020222C /* AppDelegate.swift */; };
 		F12D434224086AAE0020222C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D434124086AAE0020222C /* ViewController.swift */; };
-		F12D434524086AAE0020222C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12D434324086AAE0020222C /* Main.storyboard */; };
 		F12D434724086AAF0020222C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12D434624086AAF0020222C /* Assets.xcassets */; };
 		F12D434A24086AAF0020222C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12D434824086AAF0020222C /* LaunchScreen.storyboard */; };
 		F12D435524086AAF0020222C /* AutomatyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D435424086AAF0020222C /* AutomatyTests.swift */; };
@@ -37,7 +36,6 @@
 		F12D433A24086AAE0020222C /* Automaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12D433D24086AAE0020222C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F12D434124086AAE0020222C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F12D434424086AAE0020222C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F12D434624086AAF0020222C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12D434924086AAF0020222C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12D434B24086AAF0020222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				F12D433D24086AAE0020222C /* AppDelegate.swift */,
 				F12D434124086AAE0020222C /* ViewController.swift */,
-				F12D434324086AAE0020222C /* Main.storyboard */,
 				F12D434624086AAF0020222C /* Assets.xcassets */,
 				F12D434824086AAF0020222C /* LaunchScreen.storyboard */,
 				F12D434B24086AAF0020222C /* Info.plist */,
@@ -231,7 +228,6 @@
 			files = (
 				F12D434A24086AAF0020222C /* LaunchScreen.storyboard in Resources */,
 				F12D434724086AAF0020222C /* Assets.xcassets in Resources */,
-				F12D434524086AAE0020222C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F12D434324086AAE0020222C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F12D434424086AAE0020222C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F12D434824086AAF0020222C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,7 +418,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
 				INFOPLIST_FILE = Automaty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -438,8 +427,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.Automaty;
+				PRODUCT_BUNDLE_IDENTIFIER = fivedottwelve.automaty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Automaty Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -449,7 +439,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
 				INFOPLIST_FILE = Automaty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -457,8 +448,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.Automaty;
+				PRODUCT_BUNDLE_IDENTIFIER = fivedottwelve.automaty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Automaty App Store";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -469,7 +461,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
 				INFOPLIST_FILE = AutomatyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -480,6 +473,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.AutomatyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automaty.app/Automaty";
@@ -491,7 +486,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
 				INFOPLIST_FILE = AutomatyTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -502,6 +498,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.AutomatyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automaty.app/Automaty";
@@ -512,6 +510,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8663S48MK;
 				INFOPLIST_FILE = AutomatyUITests/Info.plist;
@@ -522,6 +522,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.AutomatyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Automaty;
@@ -532,6 +534,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M8663S48MK;
 				INFOPLIST_FILE = AutomatyUITests/Info.plist;
@@ -542,6 +546,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tomasz.korab.AutomatyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Automaty;
