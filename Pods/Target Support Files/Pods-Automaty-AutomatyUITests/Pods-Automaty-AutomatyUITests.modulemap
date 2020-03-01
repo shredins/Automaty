@@ -1,0 +1,6 @@
+framework module Pods_Automaty_AutomatyUITests {
+  umbrella header "Pods-Automaty-AutomatyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
