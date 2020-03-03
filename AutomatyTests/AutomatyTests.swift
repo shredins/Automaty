@@ -7,24 +7,20 @@
 //
 
 import XCTest
+import Keys
+
 @testable import Automaty
 
 class AutomatyTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let keys = AutomatyKeys()
+
+    func testApiUrl() {
+        XCTAssertTrue(keys.apiUrl == "https://google.com")
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testCondition() {
-        XCTAssertTrue(1 == 1)
-    }
-
-    func testOtherCondition() {
-        XCTAssertTrue(2 == 2)
+    func testUserToken() {
+        XCTAssertTrue(keys.userToken == "Token")
     }
 
 }
