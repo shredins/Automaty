@@ -1,3 +1,5 @@
+inhibit_all_warnings!
+
 target 'Automaty' do
 
   use_frameworks!
