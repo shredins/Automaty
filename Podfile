@@ -1,8 +1,7 @@
 inhibit_all_warnings!
+use_frameworks!
 
 target 'Automaty' do
-
-  use_frameworks!
 
   pod 'Dip', '7.0.1'
 
@@ -16,6 +15,7 @@ target 'Automaty' do
   end
 
 end
+
 
 plugin 'cocoapods-keys', {
   :project => "Automaty",
