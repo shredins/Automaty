@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,9 @@
 		F12D434224086AAE0020222C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D434124086AAE0020222C /* ViewController.swift */; };
 		F12D434724086AAF0020222C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12D434624086AAF0020222C /* Assets.xcassets */; };
 		F12D434A24086AAF0020222C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12D434824086AAF0020222C /* LaunchScreen.storyboard */; };
-		F12D435524086AAF0020222C /* AutomatyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D435424086AAF0020222C /* AutomatyTests.swift */; };
 		F12D436024086AAF0020222C /* AutomatyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D435F24086AAF0020222C /* AutomatyUITests.swift */; };
+		F13C59132415174500E78876 /* KeysSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C59122415174500E78876 /* KeysSpec.swift */; };
+		F19B7354240F0D0D001E0865 /* KeysProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B7353240F0D0D001E0865 /* KeysProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +52,13 @@
 		F12D434924086AAF0020222C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12D434B24086AAF0020222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12D435024086AAF0020222C /* AutomatyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomatyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F12D435424086AAF0020222C /* AutomatyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatyTests.swift; sourceTree = "<group>"; };
 		F12D435624086AAF0020222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12D435B24086AAF0020222C /* AutomatyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomatyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12D435F24086AAF0020222C /* AutomatyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatyUITests.swift; sourceTree = "<group>"; };
 		F12D436124086AAF0020222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F13C59112415174400E78876 /* AutomatyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutomatyTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F13C59122415174500E78876 /* KeysSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysSpec.swift; sourceTree = "<group>"; };
+		F19B7353240F0D0D001E0865 /* KeysProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysProtocol.swift; sourceTree = "<group>"; };
 		FE826FBF9882464D51DC5D6D /* Pods_AutomatyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutomatyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +110,6 @@
 				E2174710AA461B9996137095 /* Pods-AutomatyTests.debug.xcconfig */,
 				872945C6F5BB696C28A695B9 /* Pods-AutomatyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,11 +138,9 @@
 		F12D433C24086AAE0020222C /* Automaty */ = {
 			isa = PBXGroup;
 			children = (
-				F12D433D24086AAE0020222C /* AppDelegate.swift */,
-				F12D434124086AAE0020222C /* ViewController.swift */,
-				F12D434624086AAF0020222C /* Assets.xcassets */,
-				F12D434824086AAF0020222C /* LaunchScreen.storyboard */,
-				F12D434B24086AAF0020222C /* Info.plist */,
+				F19B7352240F0CF4001E0865 /* UI */,
+				F19B7351240F0CEF001E0865 /* Others */,
+				F19B7350240F0CE9001E0865 /* Protocols */,
 			);
 			path = Automaty;
 			sourceTree = "<group>";
@@ -148,8 +148,9 @@
 		F12D435324086AAF0020222C /* AutomatyTests */ = {
 			isa = PBXGroup;
 			children = (
-				F12D435424086AAF0020222C /* AutomatyTests.swift */,
 				F12D435624086AAF0020222C /* Info.plist */,
+				F13C59122415174500E78876 /* KeysSpec.swift */,
+				F13C59112415174400E78876 /* AutomatyTests-Bridging-Header.h */,
 			);
 			path = AutomatyTests;
 			sourceTree = "<group>";
@@ -161,6 +162,33 @@
 				F12D436124086AAF0020222C /* Info.plist */,
 			);
 			path = AutomatyUITests;
+			sourceTree = "<group>";
+		};
+		F19B7350240F0CE9001E0865 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F19B7353240F0D0D001E0865 /* KeysProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F19B7351240F0CEF001E0865 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F12D433D24086AAE0020222C /* AppDelegate.swift */,
+				F12D434624086AAF0020222C /* Assets.xcassets */,
+				F12D434824086AAF0020222C /* LaunchScreen.storyboard */,
+				F12D434B24086AAF0020222C /* Info.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F19B7352240F0CF4001E0865 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F12D434124086AAE0020222C /* ViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +221,7 @@
 				F12D434C24086AAF0020222C /* Sources */,
 				F12D434D24086AAF0020222C /* Frameworks */,
 				F12D434E24086AAF0020222C /* Resources */,
+				CEAFF1A0EA42BF5B353826E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +268,7 @@
 					};
 					F12D434F24086AAF0020222C = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = F12D433924086AAE0020222C;
 					};
 					F12D435A24086AAF0020222C = {
@@ -377,6 +407,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CEAFF1A0EA42BF5B353826E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutomatyTests/Pods-AutomatyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AutomatyTests/Pods-AutomatyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AutomatyTests/Pods-AutomatyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E05664FA1B6EAA1DAC43C63B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +450,7 @@
 			files = (
 				F12D434224086AAE0020222C /* ViewController.swift in Sources */,
 				F12D433E24086AAE0020222C /* AppDelegate.swift in Sources */,
+				F19B7354240F0D0D001E0865 /* KeysProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12D435524086AAF0020222C /* AutomatyTests.swift in Sources */,
+				F13C59132415174500E78876 /* KeysSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +619,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
-				INFOPLIST_FILE = Automaty/Info.plist;
+				INFOPLIST_FILE = Automaty/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,7 +641,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
-				INFOPLIST_FILE = Automaty/Info.plist;
+				INFOPLIST_FILE = Automaty/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -613,6 +661,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
@@ -627,6 +676,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutomatyTests/AutomatyTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automaty.app/Automaty";
@@ -639,6 +690,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
@@ -653,6 +705,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutomatyTests/AutomatyTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automaty.app/Automaty";
