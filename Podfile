@@ -9,7 +9,7 @@ target 'Automaty' do
   target 'AutomatyTests' do
     inherit! :search_paths
     pod 'Quick', '2.2.0'
-    pod 'Nimble'
+    pod 'Nimble', '8.0.5'
   end
 
   target 'AutomatyUITests' do

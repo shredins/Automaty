@@ -7,7 +7,7 @@ PODS:
 DEPENDENCIES:
   - Dip (= 7.0.1)
   - Keys (from `Pods/CocoaPodsKeys`)
-  - Nimble
+  - Nimble (= 8.0.5)
   - Quick (= 2.2.0)
 
 SPEC REPOS:
@@ -26,6 +26,6 @@ SPEC CHECKSUMS:
   Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
 
-PODFILE CHECKSUM: fe16260496fe2b669506b4118830a7ed2c21f7fd
+PODFILE CHECKSUM: 07a2f99ab2dfd180684a769c89534ad80fbfda6f
 
 COCOAPODS: 1.8.4
