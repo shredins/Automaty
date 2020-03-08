@@ -1,8 +1,8 @@
 //
-//  AutomatyTests.swift
+//  KeysSpec.swift
 //  AutomatyTests
 //
-//  Created by Tomasz Korab on 27/02/2020.
+//  Created by Tomasz Korab on 08/03/2020.
 //  Copyright © 2020 Tomasz Korab. All rights reserved.
 //
 
@@ -26,7 +26,7 @@ class KeysTests: QuickSpec {
         it("Should set userToken to Token") {
             expect(keys.userToken).to(equal("Token"))
         }
-        
+
     }
 
 }

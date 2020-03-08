@@ -14,8 +14,8 @@
 		F12D434224086AAE0020222C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D434124086AAE0020222C /* ViewController.swift */; };
 		F12D434724086AAF0020222C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12D434624086AAF0020222C /* Assets.xcassets */; };
 		F12D434A24086AAF0020222C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12D434824086AAF0020222C /* LaunchScreen.storyboard */; };
-		F12D435524086AAF0020222C /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D435424086AAF0020222C /* KeysTests.swift */; };
 		F12D436024086AAF0020222C /* AutomatyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D435F24086AAF0020222C /* AutomatyUITests.swift */; };
+		F13C59132415174500E78876 /* KeysSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C59122415174500E78876 /* KeysSpec.swift */; };
 		F19B7354240F0D0D001E0865 /* KeysProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B7353240F0D0D001E0865 /* KeysProtocol.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,11 +52,12 @@
 		F12D434924086AAF0020222C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12D434B24086AAF0020222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12D435024086AAF0020222C /* AutomatyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomatyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F12D435424086AAF0020222C /* KeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
 		F12D435624086AAF0020222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F12D435B24086AAF0020222C /* AutomatyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomatyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12D435F24086AAF0020222C /* AutomatyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomatyUITests.swift; sourceTree = "<group>"; };
 		F12D436124086AAF0020222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F13C59112415174400E78876 /* AutomatyTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutomatyTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F13C59122415174500E78876 /* KeysSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysSpec.swift; sourceTree = "<group>"; };
 		F19B7353240F0D0D001E0865 /* KeysProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysProtocol.swift; sourceTree = "<group>"; };
 		FE826FBF9882464D51DC5D6D /* Pods_AutomatyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutomatyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,8 +148,9 @@
 		F12D435324086AAF0020222C /* AutomatyTests */ = {
 			isa = PBXGroup;
 			children = (
-				F12D435424086AAF0020222C /* KeysTests.swift */,
 				F12D435624086AAF0020222C /* Info.plist */,
+				F13C59122415174500E78876 /* KeysSpec.swift */,
+				F13C59112415174400E78876 /* AutomatyTests-Bridging-Header.h */,
 			);
 			path = AutomatyTests;
 			sourceTree = "<group>";
@@ -266,6 +268,7 @@
 					};
 					F12D434F24086AAF0020222C = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = F12D433924086AAE0020222C;
 					};
 					F12D435A24086AAF0020222C = {
@@ -455,7 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12D435524086AAF0020222C /* KeysTests.swift in Sources */,
+				F13C59132415174500E78876 /* KeysSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +661,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
@@ -672,6 +676,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutomatyTests/AutomatyTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automaty.app/Automaty";
@@ -684,6 +690,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M8663S48MK;
@@ -698,6 +705,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutomatyTests/AutomatyTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automaty.app/Automaty";
