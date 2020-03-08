@@ -1,3 +1,5 @@
+inhibit_all_warnings!
+
 target 'Automaty' do
 
   use_frameworks!
@@ -7,7 +9,7 @@ target 'Automaty' do
   target 'AutomatyTests' do
     inherit! :search_paths
     pod 'Quick', '2.2.0'
-    pod 'Nimble', '8.0.5'
+    pod 'Nimble'
   end
 
   target 'AutomatyUITests' do
