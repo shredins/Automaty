@@ -9,7 +9,6 @@
 import UIKit
 import Keys
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     let keys = AutomatyKeys()
