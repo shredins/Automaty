@@ -11,13 +11,16 @@
 		A14199CE69075918854D5C2A /* Pods_Automaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542C37546635C9C507D5661A /* Pods_Automaty.framework */; };
 		E83E12B5DA8E22003492D7D4 /* Pods_AutomatyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE826FBF9882464D51DC5D6D /* Pods_AutomatyTests.framework */; };
 		F12D433E24086AAE0020222C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D433D24086AAE0020222C /* AppDelegate.swift */; };
-		F12D434224086AAE0020222C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D434124086AAE0020222C /* ViewController.swift */; };
 		F12D434724086AAF0020222C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F12D434624086AAF0020222C /* Assets.xcassets */; };
 		F12D434A24086AAF0020222C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F12D434824086AAF0020222C /* LaunchScreen.storyboard */; };
 		F12D436024086AAF0020222C /* AutomatyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D435F24086AAF0020222C /* AutomatyUITests.swift */; };
 		F13C59132415174500E78876 /* KeysSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C59122415174500E78876 /* KeysSpec.swift */; };
-		F13C5915241522EE00E78876 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C5914241522EE00E78876 /* main.swift */; };
 		F19B7354240F0D0D001E0865 /* KeysProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19B7353240F0D0D001E0865 /* KeysProtocol.swift */; };
+		F1DE2AED241E5DDA00CC2CAC /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE2AEC241E5DDA00CC2CAC /* DependencyManager.swift */; };
+		F1DE2AEF241E5DF100CC2CAC /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE2AEE241E5DF100CC2CAC /* Injection.swift */; };
+		F1DE2AF2241E5F0600CC2CAC /* CredentialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE2AF1241E5F0600CC2CAC /* CredentialsView.swift */; };
+		F1DE2AF4241E5FB500CC2CAC /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DE2AF3241E5FB500CC2CAC /* CredentialsViewController.swift */; };
+		F1DE2AF5241E616800CC2CAC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13C5914241522EE00E78876 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,6 @@
 		E21750A4F8D35BD0B230AEF3 /* Pods-Automaty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Automaty.debug.xcconfig"; path = "Target Support Files/Pods-Automaty/Pods-Automaty.debug.xcconfig"; sourceTree = "<group>"; };
 		F12D433A24086AAE0020222C /* Automaty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automaty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F12D433D24086AAE0020222C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F12D434124086AAE0020222C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F12D434624086AAF0020222C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F12D434924086AAF0020222C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F12D434B24086AAF0020222C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +63,10 @@
 		F13C59122415174500E78876 /* KeysSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysSpec.swift; sourceTree = "<group>"; };
 		F13C5914241522EE00E78876 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F19B7353240F0D0D001E0865 /* KeysProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeysProtocol.swift; sourceTree = "<group>"; };
+		F1DE2AEC241E5DDA00CC2CAC /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		F1DE2AEE241E5DF100CC2CAC /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		F1DE2AF1241E5F0600CC2CAC /* CredentialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsView.swift; sourceTree = "<group>"; };
+		F1DE2AF3241E5FB500CC2CAC /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
 		FE826FBF9882464D51DC5D6D /* Pods_AutomatyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutomatyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +147,7 @@
 		F12D433C24086AAE0020222C /* Automaty */ = {
 			isa = PBXGroup;
 			children = (
+				F1DE2AEB241E5DC200CC2CAC /* DI */,
 				F19B7352240F0CF4001E0865 /* UI */,
 				F19B7351240F0CEF001E0865 /* Others */,
 				F19B7350240F0CE9001E0865 /* Protocols */,
@@ -189,9 +196,27 @@
 		F19B7352240F0CF4001E0865 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F12D434124086AAE0020222C /* ViewController.swift */,
+				F1DE2AF0241E5EF900CC2CAC /* Credentials */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		F1DE2AEB241E5DC200CC2CAC /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				F1DE2AEC241E5DDA00CC2CAC /* DependencyManager.swift */,
+				F1DE2AEE241E5DF100CC2CAC /* Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		F1DE2AF0241E5EF900CC2CAC /* Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				F1DE2AF1241E5F0600CC2CAC /* CredentialsView.swift */,
+				F1DE2AF3241E5FB500CC2CAC /* CredentialsViewController.swift */,
+			);
+			path = Credentials;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,10 +476,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F12D434224086AAE0020222C /* ViewController.swift in Sources */,
 				F12D433E24086AAE0020222C /* AppDelegate.swift in Sources */,
-				F13C5915241522EE00E78876 /* main.swift in Sources */,
+				F1DE2AF5241E616800CC2CAC /* main.swift in Sources */,
+				F1DE2AF4241E5FB500CC2CAC /* CredentialsViewController.swift in Sources */,
+				F1DE2AED241E5DDA00CC2CAC /* DependencyManager.swift in Sources */,
+				F1DE2AEF241E5DF100CC2CAC /* Injection.swift in Sources */,
 				F19B7354240F0D0D001E0865 /* KeysProtocol.swift in Sources */,
+				F1DE2AF2241E5F0600CC2CAC /* CredentialsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

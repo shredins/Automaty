@@ -11,12 +11,13 @@ import Keys
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let keys = AutomatyKeys()
-    let window = UIWindow(frame: UIScreen.main.bounds)
+    // MARK: - Private Properties
+    lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
 
+    // MARK: - Public Instance Methods
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window.rootViewController = ViewController()
-        window.makeKeyAndVisible()
+        window?.rootViewController = CredentialsViewController()
+        window?.makeKeyAndVisible()
         return true
     }
 
